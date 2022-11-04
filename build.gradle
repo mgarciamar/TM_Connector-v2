@@ -16,11 +16,14 @@ configurations {
 
 repositories {
 	mavenCentral()
+	mavenLocal()
 }
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	//implementation 'com.volante.gft:TM-RestClient:1.0.0-BETA'
+	implementation 'com.volantetech.volante.cartridge:cartridge-GFT_RESTClient:1.0'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
